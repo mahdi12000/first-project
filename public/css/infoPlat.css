@@ -1,0 +1,670 @@
+#header {
+    width: 100%;
+    height: 2cm;
+    background-color: rgb(45, 107, 45);
+    position: fixed;
+    z-index: 9999;
+    top: -0cm;
+}
+
+#register {
+    position: absolute;
+    left: 3cm;
+    top: 1.3cm;
+    color: blue;
+}
+
+header img {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 5mm;
+
+}
+
+#header a {
+    color: red;
+}
+
+#login {        /*from here*/
+    position: absolute;
+    background-color: blue;
+    right: 1cm;
+    width: 100px;
+    height: 40px;
+    margin-top: 0.2cm;
+    margin-right: 3cm;
+    border-radius: 2mm;
+    cursor: pointer;
+}
+
+#sign {
+    position: absolute;
+    background-color: white;
+    right: 1cm;
+    width: 100px;
+    height: 40px;
+    margin-top: 0.2cm;
+    border-radius: 2mm;
+    cursor: pointer;
+}
+
+#profil {
+    display: none;
+    position: absolute;
+    position: fixed;
+    top: 0cm;
+    right: 0cm;
+    z-index: 9999;
+    border: 1mm solid blue;
+    height: 11.97cm;
+    width: 8cm;
+    background-color: white;
+    /* transition: all 0.3s ease-in-out; */
+}
+
+#imgprofil {
+    width: 3cm;
+    height: 3cm;
+    position: absolute;
+    border-radius: 50%;
+    left: 2.5cm;
+    top: 0.5cm;
+}
+
+#imgprofil>img {
+    width: 3cm;
+    height: 3cm;
+    border-radius: 50%;
+    left: 2.5cm;
+    top: 0.5cm;
+}
+
+#username {
+    width: 100%;
+    height: 1cm;
+    /* background-color: rgb(25, 2, 228); */
+    /* z-index: 9999; */
+    position: absolute;
+    text-align: center;
+    top: 3cm;
+}
+
+
+#infodiv {
+    position: relative;
+    height: 1.5cm;
+    top: 4cm;
+    background-color: yellow;
+
+}
+
+#infodiv:hover {
+    border-top: 0.4mm solid black;
+    border-bottom: 0.2mm solid black;
+}
+
+#infodiv img {
+    width: 1cm;
+    height: 1cm;
+    border-radius: 50%;
+    position: relative;
+    top: 3mm;
+    left: 1mm;
+}
+
+#infodiv p {
+    position: absolute;
+    top: 0mm;
+    left: 1.2cm;
+
+}
+
+#bookings {
+    position: relative;
+    height: 1.5cm;
+    top: 4cm;
+    background-color: yellow;
+    /* border: 0.2mm solid black; */
+}
+
+#bookings:hover {
+    border-top: 0.4mm solid black;
+    border-bottom: 0.2mm solid black;
+}
+
+#bookings img {
+    width: 1cm;
+    height: 1cm;
+    border-radius: 50%;
+    position: relative;
+    top: 3mm;
+    left: 1mm;
+}
+
+#bookings p {
+    position: absolute;
+    top: 0mm;
+    left: 1.2cm;
+}
+
+#reviews {
+    position: relative;
+    height: 1.5cm;
+    top: 4cm;
+    background-color: yellow;
+    /* border: 0.2mm solid black; */
+}
+
+#reviews:hover {
+    border-top: 0.4mm solid black;
+    border-bottom: 0.2mm solid black;
+}
+
+#reviews img {
+    width: 1cm;
+    height: 1cm;
+    border-radius: 50%;
+    position: relative;
+    top: 3mm;
+    left: 1mm;
+}
+
+#reviews p {
+    position: absolute;
+    top: 0mm;
+    left: 1.2cm;
+}
+
+#orders {
+    position: relative;
+    height: 1.5cm;
+    top: 4cm;
+    background-color: yellow;
+    /* border: 0.2mm solid black; */
+}
+
+#orders:hover {
+    border-top: 0.4mm solid black;
+    border-bottom: 0.2mm solid black;
+}
+
+#orders img {
+    width: 1cm;
+    height: 1cm;
+    border-radius: 50%;
+    position: relative;
+    top: 3mm;
+    left: 1mm;
+}
+
+#orders p {
+    position: absolute;
+    top: 0mm;
+    left: 1.2cm;
+}
+
+#log_out {
+    position: relative;
+    height: 1.5cm;
+    top: 4cm;
+    background-color: red;
+}
+
+#log_out:hover {
+    border-top: 0.4mm solid black;
+    border-bottom: 0.2mm solid black;
+}
+
+#log_out img {
+    width: 1cm;
+    height: 1cm;
+    border-radius: 50%;
+    position: relative;
+    top: 3mm;
+    left: 1mm;
+}
+
+#log_out p {
+    position: absolute;
+    top: 0mm;
+    left: 1.2cm;
+}
+
+#masquer {
+    position: relative;
+    left: 7.4cm;
+    background-color: white;
+    border: none;
+}
+
+#masquer:hover {
+    background-color: red;
+}
+
+
+
+#account {
+    position: absolute;
+    width: auto;
+    height: 1.3cm;
+    border: 2mm;
+    left: 33cm;
+    margin-right: 5mm;
+    top: 5mm;
+    cursor: pointer;
+}
+
+#account img {
+    position: absolute;
+    border-radius: 50%;
+    height: 1cm;
+    width: 1cm;
+    left: 50%;
+}
+
+#account p {
+    position: absolute;
+    margin-top: 1mm;
+    margin-right: 2mm;
+    right: 50%;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+}
+
+#grand_image img {
+    width: 100%;
+    height: 14cm;
+    position: absolute;
+    top: 2cm;
+}
+
+#blockimage {
+    position: relative;
+    top: 17cm;
+    height: 366px;
+    width: 729px;
+}
+
+#principale {
+    position: absolute;
+    height: 365px;
+    width: 340px;
+}
+
+#img1 {
+    position: absolute;
+    height: 176px;
+    width: 176px;
+    left: 350px;
+}
+
+#img2 {
+    position: absolute;
+    height: 176px;
+    width: 176px;
+    left: 536px;
+}
+
+#img3 {
+    position: absolute;
+    height: 176px;
+    width: 176px;
+    top: 186px;
+    left: 350px;
+}
+
+#img4 {
+    position: absolute;
+    height: 176px;
+    width: 176px;
+    top: 186px;
+    left: 536px;
+}
+
+#Description {
+    color: blue;
+    position: relative;
+    top: 7cm;
+    left: 19.5cm;
+}
+
+.description {
+    background-color: white;
+    height: 8.5cm;
+    width: 40%;
+    position: relative;
+    top: 7cm;
+    left: 19.5cm;
+    font-size: large;
+    line-height: 1.5;
+}
+
+#table {
+    position: relative;
+    /* display: inline-block; */
+    background-color: rgb(202, 195, 195);
+    top: 10cm;
+    left: 4cm;
+    width: 398px;
+    height: 559px;
+    /* border: 2px solid black; */
+}
+
+/* #table form{
+    background-color: yellow;
+} */
+
+#reservation {
+    background-color: blue;
+    position: absolute;
+    width: 398px;
+    border-radius: 2mm;
+    /* border-top-right-radius: 2mm;
+    border-top-right-radius: 2mm; */
+}
+
+#numberpaleces {
+    position: absolute;
+    top: 2.5cm;
+    font-weight: bold;
+    left: 2.3cm;
+    font-size: 25px;
+}
+
+#places {
+    position: absolute;
+    top: 4cm;
+    left: 2cm;
+    height: 10mm;
+    width: 6cm;
+}
+
+#h2 {
+    position: relative;
+    left: 2.5cm;
+    color: black;
+    font-weight: bold;
+}
+
+#Date {
+    position: absolute;
+    top: 6cm;
+    font-weight: bold;
+    left: 3.8cm;
+    font-size: 25px;
+}
+
+#date {
+    position: absolute;
+    top: 7cm;
+    left: 2cm;
+    height: 10mm;
+    width: 6cm;
+}
+
+#Time {
+    position: absolute;
+    top: 9cm;
+    font-weight: bold;
+    left: 3.9cm;
+    font-size: 25px;
+}
+
+#time {
+    position: absolute;
+    top: 10cm;
+    left: 2cm;
+    height: 10mm;
+    width: 6cm;
+}
+
+/*-------------------------from here------------------------*/
+#buttonBook {
+    background-color: blue;
+    border-radius: 2mm;
+    position: absolute;
+    width: 4cm;
+    height: 1.3cm;
+    top: 13cm;
+    left: 3.5cm;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#Order {
+    position: relative;
+    background-color: rgb(202, 195, 195);
+    top: -4.7cm;
+    left: 19cm;
+    width: 398px;
+    height: 559px;
+}
+
+#order {
+    background-color: blue;
+    position: absolute;
+    width: 398px;
+}
+
+#makeorder {
+    position: relative;
+    /* top: 1cm; */
+    font-weight: bold;
+    left: 2.7cm;
+    font-size: 25px;
+}
+
+#Quantity {
+    position: absolute;
+    top: 2.5cm;
+    font-weight: bold;
+    left: 2.3cm;
+    font-size: 25px;
+}
+
+#quantity {
+    position: absolute;
+    top: 4cm;
+    left: 2cm;
+    height: 10mm;
+    width: 6cm;
+}
+
+#Card {
+    position: absolute;
+    top: 6cm;
+    font-weight: bold;
+    left: 3.8cm;
+    font-size: 25px;
+}
+
+#card {
+    position: absolute;
+    top: 7cm;
+    left: 2cm;
+    height: 10mm;
+    width: 6cm;
+}
+
+#buttonreserve {
+    background-color: blue;
+    border-radius: 2mm;
+    position: absolute;
+    width: 4cm;
+    height: 1.3cm;
+    top: 13cm;
+    left: 3.5cm;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#animation {
+    width: auto;
+    height: auto;
+    top: -1.5cm;
+    position: relative;
+    margin-left: 0cm;
+    border: 1mm solid blue;
+}
+
+.comments {
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    width: 25cm;
+    border-top: 0.025mm solid black;
+    border-bottom: 0.025mm solid black;
+    margin-top: 0cm;
+    margin-left: 0.5cm;
+    /* border-radius: 6px; */
+}
+
+.imageprofil {
+    border-radius: 50%;
+    margin-left: 3mm;
+    margin-top: 3mm;
+    width: 1.2cm;
+    height: 1.2cm;
+
+}
+
+.imageprofil img {
+    border-radius: 50%;
+    width: 1.2cm;
+    height: 1.2cm;
+}
+
+.fullname {
+    position: relative;
+    top: -1cm;
+    left: 2cm;
+}
+
+.note {
+    position: relative;
+    left: 20.8cm;
+    top: -1.5cm;
+    color: blue;
+    font-size: larger;
+}
+
+.datecomment {
+    position: relative;
+    left: 1cm;
+    top: -0.5cm;
+    color: blue;
+}
+
+.avis {
+    position: relative;
+    margin-left: 3mm;
+    margin-top: 0.001cm;
+    color: black;
+}
+
+#mycomment {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#myimage {
+    margin-right: 10px;
+}
+
+#myimage img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+#comment-form {
+    flex: 1;
+}
+
+#comment-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+}
+
+#comment-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#comment-btn:hover {
+    background-color: #0056b3;
+}
+
+.modifie{
+    background-color: #0005f3;
+    position: relative;
+    width: 2.5cm;
+    height: 0.8cm;
+    left: 22.5cm;
+    bottom: -8mm;
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    color: #fff;
+    resize: none;
+}
+
+.delete{
+    background-color: red;
+    position: relative;
+    width: 2.5cm;
+    height: 0.8cm;
+    left: 19.8cm;
+    bottom: 0.2mm;
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    color: #fff;
+    resize: none;
+
+}
+
+.modifieDiv{
+    display: none;
+    position: relative;
+}
+
+.save{
+    background-color: #0005f3;
+    color: white;
+}
+
+#more {
+    background-color: blue;
+    color: white;
+    position: absolute;
+    left: 10cm;
+    margin-top: 0.7cm;
+    width: 4cm;
+    height: 0.8cm;
+    cursor: pointer;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    position: relative;
+    height: 5cm;
+    top: 13.9cm;
+    /*kant 7cm*/
+}
+
+footer h3 {
+    color: white;
+}

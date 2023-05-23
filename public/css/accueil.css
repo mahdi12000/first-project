@@ -1,0 +1,827 @@
+body {
+    background-image: url('../images/best.jpg');
+    background-size: 34.3cm 34cm;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#register {
+    position: absolute;
+    left: 3cm;
+    top: 1.3cm;
+    color: blue;
+}
+
+#header {
+    width: 100%;
+    height: 2cm;
+    background-color: rgb(45, 107, 45);
+    position: fixed;
+    z-index: 9999;
+    top: -0cm;
+}
+
+header img {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 5mm;
+
+}
+
+#header a {
+    color: red;
+}
+
+#login {
+    position: absolute;
+    background-color: blue;
+    right: 1cm;
+    width: 100px;
+    height: 40px;
+    margin-top: 0.2cm;
+    margin-right: 3cm;
+    border-radius: 2mm;
+    cursor: pointer;
+}
+
+#sign {
+    position: absolute;
+    background-color: white;
+    right: 1cm;
+    width: 100px;
+    height: 40px;
+    margin-top: 0.2cm;
+    border-radius: 2mm;
+    cursor: pointer;
+}
+
+#recherche {
+    background-color: white;
+    width: 850px;
+    margin-left: 5cm;
+    margin-top: 4cm;
+    height: 345px;
+    display: inline-block;
+    position: absolute;
+}
+
+#search {
+    position: relative;
+    width: 17.3cm;
+    height: 50px;
+    left: 5mm;
+    margin-top: 7mm;
+    margin-left: 1.5cm;
+    background-color: rgb(45, 107, 45);
+    border-radius: 2mm;
+    cursor: pointer;
+}
+
+#recherche label {
+    margin-left: 2cm;
+    margin-bottom: 2mm;
+    font-size: larger;
+}
+
+#container1 {
+    width: auto;
+    height: auto;
+}
+
+#icone1 {
+    background-image: url('fourchette.jpeg');
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 2.2cm;
+    margin-top: 7mm;
+}
+
+#what {
+    width: 16cm;
+    height: 1cm;
+    margin-left: 2cm;
+    border-radius: 2mm;
+    padding-left: 45px;
+}
+
+#container2 {
+    width: auto;
+    height: auto;
+}
+
+#icone2 {
+    background-image: url('localisation.jpeg');
+    background-size: contain;
+    width: 20px;
+    height: 30px;
+    position: absolute;
+    left: 2.2cm;
+    margin-top: 2mm;
+}
+
+#where {
+    width: 16cm;
+    height: 1cm;
+    border-radius: 2mm;
+    margin-left: 2cm;
+    padding-left: 40px;
+}
+
+#recherche h2 {
+    margin-left: 0.8cm;
+}
+
+main h1 {
+    position: absolute;
+    color: white;
+    margin-top: 2cm;
+    margin-left: 5cm;
+    font-size: 35px;
+    font-weight: 900;
+}
+
+#R1 {
+    position: absolute;
+    top: 22cm;
+    left: 1cm;
+}
+
+#R1 img {
+    height: 340px;
+    width: 340px;
+    border-radius: 2mm;
+
+}
+
+#R1 h3 {
+    margin-left: 0.8cm;
+    margin-top: 1mm;
+    color: blue;
+}
+
+#R2 {
+    position: absolute;
+    top: 22cm;
+    left: 12cm;
+}
+
+#R2 img {
+    height: 340px;
+    width: 340px;
+    border-radius: 2mm;
+}
+
+#R2 h3 {
+    margin-left: 0.8cm;
+    margin-top: 1mm;
+    color: blue;
+}
+
+#R3 {
+    position: absolute;
+    top: 22cm;
+    left: 23cm;
+    color: blue;
+}
+
+#R3 img {
+    height: 340px;
+    width: 340px;
+    border-radius: 2mm;
+}
+
+#R3 h3 {
+    margin-left: 0.8cm;
+    margin-top: 1mm;
+    color: blue;
+}
+
+#R4 {
+    position: absolute;
+    top: 40cm;
+    left: 1cm;
+}
+
+#R4 img {
+    height: 340px;
+    width: 340px;
+    border-radius: 2mm;
+}
+
+#R4 h3 {
+    margin-left: 0.8cm;
+    margin-top: 1mm;
+    color: blue;
+}
+
+#R5 {
+    position: absolute;
+    top: 40cm;
+    left: 12cm;
+}
+
+#R5 img {
+    height: 340px;
+    width: 340px;
+    border-radius: 2mm;
+}
+
+#R5 h3 {
+    margin-left: 0.8cm;
+    margin-top: 1mm;
+    color: blue;
+}
+
+#R6 {
+    position: absolute;
+    top: 40cm;
+    left: 23cm;
+}
+
+#R6 img {
+    height: 340px;
+    width: 340px;
+    border-radius: 2mm;
+}
+
+#R6 h3 {
+    margin-left: 0.8cm;
+    margin-top: 1mm;
+    color: blue;
+}
+
+.para {
+    position: absolute;
+    margin-top: 0mm;
+    font-size: large;
+    font-weight: bold;
+    color: black;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    position: absolute;
+    top: 72cm;
+    /* margin-top: 1cm; */
+    left: 0cm;
+    height: 5cm;
+    width: 100%;
+}
+
+footer a {
+    color: white;
+}
+
+#ici {
+    color: red;
+}
+
+#some {
+    color: blue;
+    position: absolute;
+    top: 18cm;
+    margin-left: 1cm;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#suggetion {
+    color: blue;
+    position: absolute;
+    top: 36cm;
+    margin-left: 1cm;
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* #Login {
+    display: none;
+    position: absolute;
+    top: 1.3cm;
+    left: 27.5cm;
+    z-index: 9999;
+    border: 1mm solid blue;
+    height: 10cm;
+    width: 8cm;
+    background-color: rgb(238, 255, 5);
+} */
+
+#lb1 {
+    font-size: larger;
+    font-weight: bold;
+    position: relative;
+    top: 6mm;
+    margin-left: 3mm;
+}
+
+#adresse {
+    width: 6cm;
+    height: 6mm;
+    position: relative;
+    top: 8mm;
+    margin-left: 3mm;
+}
+
+#lb2 {
+    font-size: larger;
+    font-weight: bold;
+    position: relative;
+    top: 15mm;
+    margin-left: 3mm;
+}
+
+#motdepasse {
+    width: 6cm;
+    height: 6mm;
+    position: relative;
+    top: 16mm;
+    margin-left: 3mm;
+}
+
+#connexion {
+    position: relative;
+    top: 2cm;
+    background-color: blue;
+    height: 7mm;
+    border-radius: 1mm;
+    margin-left: 5mm;
+    width: 20mm;
+}
+
+.blur {
+    opacity: 0.23;
+    /* pointer-events: none; */
+}
+
+#disparait {
+    position: absolute;
+    top: 0mm;
+    right: 0mm;
+}
+
+#disparait:hover {
+    background-color: red;
+}
+
+/* #Sign{
+    display: none;
+    position: absolute;
+    top: 1.3cm;
+    left: 27.5cm;
+    z-index: 9999;
+    border: 1mm solid blue;
+    height: 10cm;
+    width: 8cm;
+    background-color: rgb(204, 201, 197);
+} */
+
+#Disparait {
+    position: absolute;
+    top: 0mm;
+    right: 0mm;
+}
+
+#Disparait:hover {
+    background-color: red;
+}
+
+#Lb1 {
+    font-size: larger;
+    font-weight: bold;
+    position: relative;
+    top: 24mm;
+    margin-left: 3mm;
+}
+
+#Adresse {
+    width: 6cm;
+    height: 6mm;
+    position: relative;
+    top: 26mm;
+    margin-left: 3mm;
+}
+
+#Lb2 {
+    font-size: larger;
+    font-weight: bold;
+    position: relative;
+    top: 33mm;
+    margin-left: 3mm;
+}
+
+#Motdepasse {
+    width: 6cm;
+    height: 6mm;
+    position: relative;
+    top: 36mm;
+    margin-left: 3mm;
+}
+
+#Connexion {
+    position: relative;
+    top: 39mm;
+    background-color: blue;
+    height: 7mm;
+    border-radius: 1mm;
+    margin-left: 5mm;
+    width: 20mm;
+}
+
+#Lb3 {
+    font-size: larger;
+    font-weight: bold;
+    position: relative;
+    top: 6mm;
+    margin-left: 3mm;
+}
+
+#Lb4 {
+    font-size: larger;
+    font-weight: bold;
+    position: relative;
+    top: 15mm;
+    margin-left: 3mm;
+}
+
+#firstname {
+    width: 6cm;
+    height: 4.5mm;
+    position: relative;
+    top: 8mm;
+    margin-left: 3mm;
+}
+
+#lastname {
+    width: 6cm;
+    height: 4.5mm;
+    position: relative;
+    top: 17mm;
+    margin-left: 3mm;
+}
+
+#getcoins {
+    position: absolute;
+    top: 53cm;
+    color: blue;
+    margin-left: 1cm;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#R7 {
+    position: absolute;
+    top: 57cm;
+    left: 1cm;
+}
+
+#R7 img {
+    height: 340px;
+    width: 340px;
+    border-radius: 2mm;
+}
+
+#R7 h3 {
+    margin-left: 0.8cm;
+    margin-top: 1mm;
+    color: blue;
+}
+
+.para {
+    position: absolute;
+    margin-top: 0mm;
+    font-size: large;
+    font-weight: bold;
+    color: black;
+}
+
+#R8 {
+    position: absolute;
+    top: 57cm;
+    left: 12cm;
+}
+
+#R8 img {
+    height: 340px;
+    width: 340px;
+    border-radius: 2mm;
+}
+
+#R8 h3 {
+    margin-left: 0.8cm;
+    margin-top: 1mm;
+    color: blue;
+}
+
+.para {
+    position: absolute;
+    margin-top: 0mm;
+    font-size: large;
+    font-weight: bold;
+    color: black;
+}
+
+#R9 {
+    position: absolute;
+    top: 57cm;
+    left: 23cm;
+}
+
+#R9 img {
+    height: 340px;
+    width: 340px;
+    border-radius: 2mm;
+}
+
+#R9 h3 {
+    margin-left: 0.8cm;
+    margin-top: 1mm;
+    color: blue;
+}
+
+.para {
+    position: absolute;
+    margin-top: 0mm;
+    font-size: large;
+    font-weight: bold;
+    color: black;
+}
+
+.home {
+    position: absolute;
+    left: 10cm;
+    color: red;
+    font-size: larger;
+    font-weight: bolder;
+    z-index: 9999;
+}
+
+#account {
+    position: absolute;
+    width: auto;
+    height: 1.3cm;
+    border: 2mm;
+    left: 33cm;
+    margin-right: 5mm;
+    top: 5mm;
+    cursor: pointer;
+}
+
+#account img {
+    position: absolute;
+    border-radius: 50%;
+    height: 1cm;
+    width: 1cm;
+    left: 50%;
+}
+
+#account p {
+    position: absolute;
+    margin-top: 1mm;
+    margin-right: 2mm;
+    right: 50%;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+}
+
+#profil {
+    display: none;
+    position: fixed;
+    top: 0cm;
+    right: 0cm;
+    z-index: 9999;
+    border: 1mm solid blue;
+    height: 13.05cm;
+    width: 8cm;
+    background-color: white;
+
+}
+
+                            /*from here*/
+#login {        
+position: absolute;
+background-color: blue;
+right: 1cm;
+width: 100px;
+height: 40px;
+margin-top: 0.2cm;
+margin-right: 3cm;
+border-radius: 2mm;
+cursor: pointer;
+}
+
+#sign {
+    position: absolute;
+    background-color: white;
+    right: 1cm;
+    width: 100px;
+    height: 40px;
+    margin-top: 0.2cm;
+    border-radius: 2mm;
+    cursor: pointer;
+}
+
+#profil {
+    display: none;
+    position: absolute;
+    position: fixed;
+    top: 0cm;
+    right: 0cm;
+    z-index: 9999;
+    border: 1mm solid blue;
+    height: 11.97cm;
+    width: 8cm;
+    background-color: white;
+    /* transition: all 0.3s ease-in-out; */
+}
+
+#imgprofil {
+    width: 3cm;
+    height: 3cm;
+    position: absolute;
+    border-radius: 50%;
+    left: 2.5cm;
+    top: 0.5cm;
+}
+
+#imgprofil>img {
+    width: 3cm;
+    height: 3cm;
+    border-radius: 50%;
+    left: 2.5cm;
+    top: 0.5cm;
+}
+
+#username {
+    width: 100%;
+    height: 1cm;
+    /* background-color: rgb(25, 2, 228); */
+    /* z-index: 9999; */
+    position: absolute;
+    text-align: center;
+    top: 3cm;
+}
+
+
+#infodiv {
+    position: relative;
+    height: 1.5cm;
+    top: 4cm;
+    background-color: yellow;
+
+}
+
+#infodiv:hover {
+    border-top: 0.4mm solid black;
+    border-bottom: 0.2mm solid black;
+}
+
+#infodiv img {
+    width: 1cm;
+    height: 1cm;
+    border-radius: 50%;
+    position: relative;
+    top: 3mm;
+    left: 1mm;
+}
+
+#infodiv p {
+    position: absolute;
+    top: 0mm;
+    left: 1.2cm;
+
+}
+
+#bookings {
+    position: relative;
+    height: 1.5cm;
+    top: 4cm;
+    background-color: yellow;
+    /* border: 0.2mm solid black; */
+}
+
+#bookings:hover {
+    border-top: 0.4mm solid black;
+    border-bottom: 0.2mm solid black;
+}
+
+#bookings img {
+    width: 1cm;
+    height: 1cm;
+    border-radius: 50%;
+    position: relative;
+    top: 3mm;
+    left: 1mm;
+}
+
+#bookings p {
+    position: absolute;
+    top: 0mm;
+    left: 1.2cm;
+}
+
+#reviews {
+    position: relative;
+    height: 1.5cm;
+    top: 4cm;
+    background-color: yellow;
+    /* border: 0.2mm solid black; */
+}
+
+#reviews:hover {
+    border-top: 0.4mm solid black;
+    border-bottom: 0.2mm solid black;
+}
+
+#reviews img {
+    width: 1cm;
+    height: 1cm;
+    border-radius: 50%;
+    position: relative;
+    top: 3mm;
+    left: 1mm;
+}
+
+#reviews p {
+    position: absolute;
+    top: 0mm;
+    left: 1.2cm;
+}
+
+#orders {
+    position: relative;
+    height: 1.5cm;
+    top: 4cm;
+    background-color: yellow;
+    /* border: 0.2mm solid black; */
+}
+
+#orders:hover {
+    border-top: 0.4mm solid black;
+    border-bottom: 0.2mm solid black;
+}
+
+#orders img {
+    width: 1cm;
+    height: 1cm;
+    border-radius: 50%;
+    position: relative;
+    top: 3mm;
+    left: 1mm;
+}
+
+#orders p {
+    position: absolute;
+    top: 0mm;
+    left: 1.2cm;
+}
+
+#log_out {
+    position: relative;
+    height: 1.5cm;
+    top: 4cm;
+    background-color: red;
+}
+
+#log_out:hover {
+    border-top: 0.4mm solid black;
+    border-bottom: 0.2mm solid black;
+}
+
+#log_out img {
+    width: 1cm;
+    height: 1cm;
+    border-radius: 50%;
+    position: relative;
+    top: 3mm;
+    left: 1mm;
+}
+
+#log_out p {
+    position: absolute;
+    top: 0mm;
+    left: 1.2cm;
+}
+
+#masquer {
+    position: relative;
+    left: 7.4cm;
+    background-color: white;
+    border: none;
+}
+
+#masquer:hover {
+    background-color: red;
+}
+
+                        /*to here*/
+
+.blur {
+    opacity: 0.1;
+    /* pointer-events: none; */
+    transition: transform 2s ease-in-out;
+}

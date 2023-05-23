@@ -1,0 +1,398 @@
+#header {
+    width: 100%;
+    height: 2cm;
+    background-color: rgb(45, 107, 45);
+    position: fixed;
+    z-index: 9999;
+    top: -0cm;
+}
+
+#register {
+    position: absolute;
+    left: 3cm;
+    top: 1.3cm;
+    color: blue;
+}
+
+header img {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 5mm;
+
+}
+
+#header a {
+    color: red;
+}
+
+#login {
+    position: absolute;
+    background-color: blue;
+    right: 1cm;
+    width: 100px;
+    height: 40px;
+    margin-top: 0.2cm;
+    margin-right: 3cm;
+    border-radius: 2mm;
+    cursor: pointer;
+}
+
+#sign {
+    position: absolute;
+    background-color: white;
+    right: 1cm;
+    width: 100px;
+    height: 40px;
+    margin-top: 0.2cm;
+    border-radius: 2mm;
+    cursor: pointer;
+}
+
+#profil {
+    display: none;
+    position: absolute;
+    position: fixed;
+    top: 0cm;
+    right: 0cm;
+    z-index: 9999;
+    border: 1mm solid blue;
+    height: 11.97cm;
+    width: 8cm;
+    background-color: white;
+    /* transition: all 0.3s ease-in-out; */
+}
+
+#imgprofil {
+    width: 3cm;
+    height: 3cm;
+    position: absolute;
+    border-radius: 50%;
+    left: 2.5cm;
+    top: 0.5cm;
+}
+
+#imgprofil>img {
+    width: 3cm;
+    height: 3cm;
+    border-radius: 50%;
+    left: 2.5cm;
+    top: 0.5cm;
+}
+
+#username {
+    width: 100%;
+    height: 1cm;
+    /* background-color: rgb(25, 2, 228); */
+    /* z-index: 9999; */
+    position: absolute;
+    text-align: center;
+    top: 3cm;
+}
+
+
+#infodiv {
+    position: relative;
+    height: 1.5cm;
+    top: 4cm;
+    background-color: yellow;
+
+}
+
+#infodiv:hover {
+    border-top: 0.4mm solid black;
+    border-bottom: 0.2mm solid black;
+}
+
+#infodiv img {
+    width: 1cm;
+    height: 1cm;
+    border-radius: 50%;
+    position: relative;
+    top: 3mm;
+    left: 1mm;
+}
+
+#infodiv p {
+    position: absolute;
+    top: 0mm;
+    left: 1.2cm;
+
+}
+
+#bookings {
+    position: relative;
+    height: 1.5cm;
+    top: 4cm;
+    background-color: yellow;
+    /* border: 0.2mm solid black; */
+}
+
+#bookings:hover {
+    border-top: 0.4mm solid black;
+    border-bottom: 0.2mm solid black;
+}
+
+#bookings img {
+    width: 1cm;
+    height: 1cm;
+    border-radius: 50%;
+    position: relative;
+    top: 3mm;
+    left: 1mm;
+}
+
+#bookings p {
+    position: absolute;
+    top: 0mm;
+    left: 1.2cm;
+}
+
+#reviews {
+    position: relative;
+    height: 1.5cm;
+    top: 4cm;
+    background-color: yellow;
+    /* border: 0.2mm solid black; */
+}
+
+#reviews:hover {
+    border-top: 0.4mm solid black;
+    border-bottom: 0.2mm solid black;
+}
+
+#reviews img {
+    width: 1cm;
+    height: 1cm;
+    border-radius: 50%;
+    position: relative;
+    top: 3mm;
+    left: 1mm;
+}
+
+#reviews p {
+    position: absolute;
+    top: 0mm;
+    left: 1.2cm;
+}
+
+#orders {
+    position: relative;
+    height: 1.5cm;
+    top: 4cm;
+    background-color: yellow;
+    /* border: 0.2mm solid black; */
+}
+
+#orders:hover {
+    border-top: 0.4mm solid black;
+    border-bottom: 0.2mm solid black;
+}
+
+#orders img {
+    width: 1cm;
+    height: 1cm;
+    border-radius: 50%;
+    position: relative;
+    top: 3mm;
+    left: 1mm;
+}
+
+#orders p {
+    position: absolute;
+    top: 0mm;
+    left: 1.2cm;
+}
+
+#log_out {
+    position: relative;
+    height: 1.5cm;
+    top: 4cm;
+    background-color: red;
+}
+
+#log_out:hover {
+    border-top: 0.4mm solid black;
+    border-bottom: 0.2mm solid black;
+}
+
+#log_out img {
+    width: 1cm;
+    height: 1cm;
+    border-radius: 50%;
+    position: relative;
+    top: 3mm;
+    left: 1mm;
+}
+
+#log_out p {
+    position: absolute;
+    top: 0mm;
+    left: 1.2cm;
+}
+
+#masquer {
+    position: relative;
+    left: 7.4cm;
+    background-color: white;
+    border: none;
+}
+
+#masquer:hover {
+    background-color: red;
+}
+
+
+
+#account {
+    position: absolute;
+    width: auto;
+    height: 1.3cm;
+    border: 2mm;
+    left: 33cm;
+    margin-right: 5mm;
+    top: 5mm;
+    cursor: pointer;
+}
+
+#account img {
+    position: absolute;
+    border-radius: 50%;
+    height: 1cm;
+    width: 1cm;
+    left: 50%;
+}
+
+#account p {
+    position: absolute;
+    margin-top: 1mm;
+    margin-right: 2mm;
+    right: 50%;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+}
+
+#grand_image img {
+    width: 100%;
+    height: 14cm;
+    position: absolute;
+    top: 2cm;
+}
+
+#background{
+    /* background-image: url('images/back8.jpeg');
+    background-size: 34.3cm 34cm;
+    background-repeat: no-repeat;
+    background-position: center center; */
+    height: 20cm;
+    width: 100%;
+    z-index: 9999;
+    position: absolute;
+    top: 16cm;
+}
+
+#background img{
+    margin-top: 0.5cm;
+    width: 100%;
+    height: 20cm;
+}
+
+#grand_div {
+    position: relative;
+    top: 19cm;
+    height: auto;
+    /* border: 1mm solid yellow; */
+}
+
+#image_part {
+    position: absolute;
+    /* border: 1mm solid red; */
+    left: 50%;
+    width: 50%;
+    height: auto;
+}
+
+
+#image_part img {
+    width: 17cm;
+    height: 17cm;
+}
+
+#jus{
+    width: 17cm;
+    height: auto;
+}
+
+#ourMenu {
+    position: absolute;
+    color: black;
+    top: 16cm;
+    left: 1cm;
+}
+
+.menu {
+    position: relative;
+    width: 50%;
+    height: 340px;
+    display: inline-block;
+    background-color: rgba(194, 187, 187, 0.753);
+}
+
+.div_img {
+    width: 7cm;
+    height: 340px;
+    float: left;
+}
+
+.div_img img {
+    position: absolute;
+    width: 7cm;
+    height: 340px;
+}
+
+/* .description {
+    left: 20cm;
+} */
+
+.Description {
+    position: absolute;
+    left: 8cm;
+    color: black;
+    top: 2cm;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.platter {
+    position: absolute;
+    left: 8cm;
+    color: black;
+    top: 0.1cm;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.price {
+    position: absolute;
+    color: black;
+    left: 8cm;
+    top: 1cm;
+    font-size: larger;
+    font-weight: bold;
+}
+
+footer {
+    position: relative;
+    background-color: black;
+    color: white;
+    position: relative;
+    height: 5cm;
+    /* margin-top: 3cm; */
+    top:40cm;
+    /*kant 7cm*/
+}
+
+footer h3 {
+    color: white;
+}
