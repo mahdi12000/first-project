@@ -23,6 +23,26 @@
                 <x-label for="country" value="{{ __('country') }}" />
                 <x-input id="country" class="block mt-1 w-full" type="text" name="country" :value="old('country')" required autocomplete="country" />
             </div>
+
+            <div class="mt-4">
+                <x-label for="neighborhood" value="{{ __('neighborhood') }}" />
+                <x-input id="neighborhood" class="block mt-1 w-full" type="text" name="neighborhood" :value="old('neighborhood')" required autocomplete="neighborhood" />
+            </div>
+
+            <div class="mt-4">
+                <x-label for="building" value="{{ __('building') }}" />
+                <x-input id="building" class="block mt-1 w-full" type="text" name="building" :value="old('building')" required autocomplete="building" />
+            </div>
+
+            <div class="mt-4">
+                <x-label for="apartment" value="{{ __('apartment') }}" />
+                <x-input id="apartment" class="block mt-1 w-full" type="text" name="apartment" :value="old('apartment')" required autocomplete="apartment" />
+            </div>
+
+            <div class="mt-4">
+                <x-label for="other_specif" value="{{ __('other_specif') }}" />
+                <x-input id="other_specif" class="block mt-1 w-full" type="text" name="other_specif" :value="old('other_specif')"  autocomplete="other_specif" />
+            </div>
             <!-- end here -->
             <div class="mt-4">
                 <x-label for="email" value="{{ __('Email') }}" />
@@ -40,20 +60,20 @@
             </div>
 
             @if (Laravel\Jetstream\Jetstream::hasTermsAndPrivacyPolicyFeature())
-                <div class="mt-4">
-                    <x-label for="terms">
-                        <div class="flex items-center">
-                            <x-checkbox name="terms" id="terms" required />
+            <div class="mt-4">
+                <x-label for="terms">
+                    <div class="flex items-center">
+                        <x-checkbox name="terms" id="terms" required />
 
-                            <div class="ml-2">
-                                {!! __('I agree to the :terms_of_service and :privacy_policy', [
-                                        'terms_of_service' => '<a target="_blank" href="'.route('terms.show').'" class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">'.__('Terms of Service').'</a>',
-                                        'privacy_policy' => '<a target="_blank" href="'.route('policy.show').'" class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">'.__('Privacy Policy').'</a>',
-                                ]) !!}
-                            </div>
+                        <div class="ml-2">
+                            {!! __('I agree to the :terms_of_service and :privacy_policy', [
+                            'terms_of_service' => '<a target="_blank" href="'.route('terms.show').'" class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">'.__('Terms of Service').'</a>',
+                            'privacy_policy' => '<a target="_blank" href="'.route('policy.show').'" class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">'.__('Privacy Policy').'</a>',
+                            ]) !!}
                         </div>
-                    </x-label>
-                </div>
+                    </div>
+                </x-label>
+            </div>
             @endif
 
             <div class="flex items-center justify-end mt-4">

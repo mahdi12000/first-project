@@ -1,0 +1,194 @@
+/* header style */
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    position: fixed;
+    top: 0px;
+    z-index: 9999;
+    align-items: center;
+    padding: 20px;
+    height: 20px;
+    width: 34.8cm;
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+.site-name {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.owner-button {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 2mm;
+    border: 0.5mm solid orange;
+    cursor: pointer;
+}
+
+.owner-image {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.owner-name {
+    font-weight: bold;
+}
+
+.online-dot {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    right: 2.6cm;
+    top: 3mm;
+    background: rgb(44, 224, 44);
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+.logout {
+    position: relative;
+    display: none;
+    width: 145px;
+    height: 40px;
+    border-radius: 2mm;
+    border: 0.5mm solid orange;
+    background-color: white;
+    left: 25.3cm;
+    bottom: 4mm;
+    cursor: pointer;
+}
+
+.logout:hover {
+    background-color: orange;
+}
+
+.logout p {
+    cursor: pointer;
+    padding-left: 10mm;
+    padding-bottom: 5mm;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* style of vertical nav*/
+.sidebar {
+    width: 200px;
+    height: 14cm;
+    background: white;
+    padding: 20px;
+    margin-top: 60px;
+    float: left;
+    position: fixed;
+}
+
+.button-container {
+    /* border: 1mm solid red; */
+    height: 40px;
+}
+
+.button-container img {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    bottom: 43px;
+    left: 90%;
+}
+
+.profile-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+
+.profile-name {
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 45px;
+}
+
+.sidebar-button {
+    width: 180px;
+    height: 40px;
+    background: #fff;
+    border-radius: 2.5mm;
+    border: none;
+    margin-bottom: 10px;
+    padding-right: 100%;
+    transition: background 0.3s ease;
+}
+
+.sidebar-button:hover {
+    background-color: orange;
+    border-radius: 2.5mm;
+}
+
+/*---------------------------discounts style-----------------------------------------*/
+main{
+    margin-left: 255px;
+    position: relative;
+    top: 2cm;
+}
+
+.menu {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 10px;
+    /* border: 0.5mm solid red; */
+    z-index: 9999;
+}
+
+.menu form {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu p {
+    margin-bottom: 10px;
+}
+
+.menu label {
+    font-weight: bold;
+}
+
+.menu input[type="number"] {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.menu button {
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    width: 60px;
+}
+
+.menu button:hover {
+    background-color: darkorange;
+}
+
+.success{
+    color: green;
+}
+
+.error{
+    color: red;
+}

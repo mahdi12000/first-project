@@ -27,7 +27,7 @@
             @endauth
             @endif
 
-            <a href="https://www.google.com/" id="register">Register My Restaurant</a>
+            <a href="{{route('registration')}}" id="register">Register My Restaurant</a>
             <a href="http://127.0.0.1:8000/welcome"><img src="images/restaurantlogo2.jpeg" alt="logo" /></a>
         </div>
     </header>
@@ -41,28 +41,28 @@
         </div>
         <h3 id="username">{{$userinfo[0]->name}}</h3>
 
-        <a href="#">
+        <a href="{{ route('profile') }}">
             <div id="infodiv">
                 <img src="images/account.jpeg" alt="image">
                 <p>My personnal informations</p>
             </div>
         </a>
 
-        <a href="#">
+        <a href="{{route('myBookings')}}">
             <div id="bookings">
                 <img src="images/book.jpeg" alt="image">
                 <p>My bookings</p>
             </div>
         </a>
 
-        <a href="#">
+        <a href="{{route('my reviews')}}">
             <div id="reviews">
                 <img src="images/message.jpeg" alt="image">
                 <p>My reviews</p>
             </div>
         </a>
 
-        <a href="#">
+        <a href="{{route('myOrders')}}">
             <div id="orders">
                 <img src="images/orders2.jpeg" alt="image">
                 <p>My orders</p>

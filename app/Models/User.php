@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-//use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
@@ -10,7 +10,7 @@ use Laravel\Sanctum\HasApiTokens;
 use Laravel\Jetstream\HasProfilePhoto;
 use Laravel\Fortify\Features;
 
-class User extends Authenticatable
+class User extends Authenticatable 
 {
     use HasApiTokens, HasFactory, Notifiable, HasProfilePhoto;
 
@@ -27,7 +27,11 @@ class User extends Authenticatable
         'pictureLink',
         'cardNumber',
         'city',
-        'coutry',
+        'country',
+        'neighborhood',
+        'building',
+        'apartment',
+        'other_specif',
         'code',
         'usertype',
         'active'

@@ -13,18 +13,24 @@ return new class extends Migration
     {
         Schema::create('reservations', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('id_client')  		
-                  ->constrained('users')
-                  ->onDelete('cascade')
-                  ->onUpdate('cascade');
+            $table->foreignId('id_client')
+                ->constrained('users')
+                ->onDelete('cascade')
+                ->onUpdate('cascade');
             $table->foreignId('id_Restaurant')
-                  ->constrained('restaurants')
-                  ->onDelete('cascade')
-                  ->onUpdate('cascade');
+                ->constrained('restaurants')
+                ->onDelete('cascade')
+                ->onUpdate('cascade');
+            $table->foreignId('menuID')
+                ->constrained('menu')
+                ->onDelete('cascade')
+                ->onUpdate('cascade');
             $table->foreignId('id_table')
-                  ->constrained('tables')
-                  ->onDelete('cascade')
-                  ->onUpdate('cascade');
+                ->constrained('tables')
+                ->onDelete('cascade')
+                ->onUpdate('cascade');
+            $table->date('date');
+            $table->time('time');
             $table->timestamps();
         });
     }

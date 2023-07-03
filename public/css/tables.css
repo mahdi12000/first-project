@@ -1,0 +1,237 @@
+/* header style */
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border: 0.2mm solid rgb(204, 203, 203);
+    position: fixed;
+    top: 0px;
+    z-index: 9999;
+    align-items: center;
+    padding: 20px;
+    height: 20px;
+    width: 34.8cm;
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+.site-name {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.owner-button {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 2mm;
+    border: 0.5mm solid orange;
+    width: 3.5cm;
+    cursor: pointer;
+}
+
+.owner-image {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.owner-name {
+    font-weight: bold;
+}
+
+.online-dot {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    right: 3.1cm;
+    top: 10mm;
+    background: rgb(46, 253, 46);
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+.logout {
+    position: absolute;
+    display: none;
+    width: 145px;
+    height: 40px;
+    border-radius: 2mm;
+    border: 0.5mm solid orange;
+    background-color: white;
+    left: 31.7cm;
+    top: 1.7cm;
+    cursor: pointer;
+    z-index: 99999;
+}
+
+.logout:hover {
+    background-color: orange;
+}
+
+.logout p {
+    cursor: pointer;
+    padding-left: 10mm;
+    padding-bottom: 5mm;
+    font-weight: bold;
+}
+
+.fleche {
+    transform: rotate(90deg);
+}
+
+/* style of vertical nav*/
+.sidebar {
+    width: 200px;
+    height: 14cm;
+    background: white;
+    padding: 20px;
+    margin-top: 50px;
+    float: left;
+    position: fixed;
+}
+
+.button-container {
+    /* border: 1mm solid red; */
+    height: 40px;
+}
+
+.button-container img {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    bottom: 43px;
+    left: 90%;
+}
+
+.profile-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 3px;
+    margin-left: 30px;
+}
+
+.profile-name {
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 70px;
+    /* text-align: center; */
+}
+
+.sidebar-button {
+    width: 180px;
+    height: 40px;
+    background: #fff;
+    border-radius: 2.5mm;
+    border: none;
+    margin-bottom: 10px;
+    padding-right: 100%;
+    transition: background 0.3s ease;
+}
+
+.sidebar-button:hover {
+    background-color: orange;
+    border-radius: 2.5mm;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    margin-left: 250px;
+    position: relative;
+    /* border: 0.5mm solid blue; */
+    top: 1.5cm;
+    width: 29cm;
+    height: auto;
+}
+/*------------------------------new code----------------------------------------*/
+/* style pour la table */
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    border: 0.3mm solid rgb(150, 145, 145);
+}
+
+th {
+    background-color: #2f2799;
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+td {
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+}
+
+.new-table {
+    width: 30%;
+    position: relative;
+    float: right;
+    margin-bottom: 40px;
+}
+
+.new-table form {
+    display: flex;
+    align-items: center;
+}
+
+.new-table label {
+    font-weight: bold;
+    margin-right: 10px;
+    /* position: relative; */
+    /* left: 9cm;
+    top: 3cm; */
+}
+
+.new-table input[type="number"] {
+    /* position: relative; */
+    /* left: 9cm;
+    top: 4cm; */
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    width: 80px;
+}
+
+.new-table button[type="submit"] {
+    padding: 5px 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.new-table button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+button[type="button"] {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button[type="button"]:hover {
+    background-color: #0069d9;
+}
+
+
+.success-message {
+    color: green;
+}

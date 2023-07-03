@@ -1,0 +1,343 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+form {
+    width: 300px;
+    position: absolute;
+    left: 14cm;
+    /* margin: 0 auto; */
+    top: 5cm;
+}
+
+input[type="text"],
+button {
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #2196F3;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#card-element {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+#card-errors {
+    color: red;
+    margin-top: 10px;
+}
+
+.payment-message {
+    background-color: white;
+    position: absolute;
+    top: 9cm;
+    left: 14cm;
+    border-radius: 5px;
+}
+
+.error-message {
+    color: red;
+}
+
+.success-message {
+    color: green;
+}
+
+
+/* 4242 4242 4242 4242 */
+/*---------------------- from here------------------------------------- */
+#header {
+    width: 100%;
+    height: 2cm;
+    background-color: rgb(45, 107, 45);
+    position: fixed;
+    z-index: 9999;
+    top: -0cm;
+}
+
+#register {
+    position: absolute;
+    left: 3cm;
+    top: 1.3cm;
+    color: blue;
+}
+
+header img {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 5mm;
+
+}
+
+#header a {
+    color: red;
+}
+
+#login {
+    /*from here*/
+    position: absolute;
+    background-color: blue;
+    right: 1cm;
+    width: 100px;
+    height: 40px;
+    margin-top: 0.2cm;
+    margin-right: 3cm;
+    border-radius: 2mm;
+    cursor: pointer;
+}
+
+#sign {
+    position: absolute;
+    background-color: white;
+    right: 1cm;
+    width: 100px;
+    height: 40px;
+    margin-top: 0.2cm;
+    border-radius: 2mm;
+    cursor: pointer;
+}
+
+#profil {
+    display: none;
+    position: absolute;
+    position: fixed;
+    top: 0cm;
+    right: 0cm;
+    z-index: 9999;
+    border: 1mm solid blue;
+    height: 11.97cm;
+    width: 8cm;
+    background-color: white;
+    /* transition: all 0.3s ease-in-out; */
+}
+
+#imgprofil {
+    width: 3cm;
+    height: 3cm;
+    position: absolute;
+    border-radius: 50%;
+    left: 2.5cm;
+    top: 0.5cm;
+}
+
+#imgprofil>img {
+    width: 3cm;
+    height: 3cm;
+    border-radius: 50%;
+    left: 2.5cm;
+    top: 0.5cm;
+}
+
+#username {
+    width: 100%;
+    height: 1cm;
+    /* background-color: rgb(25, 2, 228); */
+    /* z-index: 9999; */
+    position: absolute;
+    text-align: center;
+    top: 3cm;
+}
+
+
+#infodiv {
+    position: relative;
+    height: 1.5cm;
+    top: 4cm;
+    background-color: yellow;
+
+}
+
+#infodiv:hover {
+    border-top: 0.4mm solid black;
+    border-bottom: 0.2mm solid black;
+}
+
+#infodiv img {
+    width: 1cm;
+    height: 1cm;
+    border-radius: 50%;
+    position: relative;
+    top: 3mm;
+    left: 1mm;
+}
+
+#infodiv p {
+    position: absolute;
+    top: 0mm;
+    left: 1.2cm;
+
+}
+
+#bookings {
+    position: relative;
+    height: 1.5cm;
+    top: 4cm;
+    background-color: yellow;
+    /* border: 0.2mm solid black; */
+}
+
+#bookings:hover {
+    border-top: 0.4mm solid black;
+    border-bottom: 0.2mm solid black;
+}
+
+#bookings img {
+    width: 1cm;
+    height: 1cm;
+    border-radius: 50%;
+    position: relative;
+    top: 3mm;
+    left: 1mm;
+}
+
+#bookings p {
+    position: absolute;
+    top: 0mm;
+    left: 1.2cm;
+}
+
+#reviews {
+    position: relative;
+    height: 1.5cm;
+    top: 4cm;
+    background-color: yellow;
+    /* border: 0.2mm solid black; */
+}
+
+#reviews:hover {
+    border-top: 0.4mm solid black;
+    border-bottom: 0.2mm solid black;
+}
+
+#reviews img {
+    width: 1cm;
+    height: 1cm;
+    border-radius: 50%;
+    position: relative;
+    top: 3mm;
+    left: 1mm;
+}
+
+#reviews p {
+    position: absolute;
+    top: 0mm;
+    left: 1.2cm;
+}
+
+#orders {
+    position: relative;
+    height: 1.5cm;
+    top: 4cm;
+    background-color: yellow;
+    /* border: 0.2mm solid black; */
+}
+
+#orders:hover {
+    border-top: 0.4mm solid black;
+    border-bottom: 0.2mm solid black;
+}
+
+#orders img {
+    width: 1cm;
+    height: 1cm;
+    border-radius: 50%;
+    position: relative;
+    top: 3mm;
+    left: 1mm;
+}
+
+#orders p {
+    position: absolute;
+    top: 0mm;
+    left: 1.2cm;
+}
+
+#log_out {
+    position: relative;
+    height: 1.5cm;
+    top: 4cm;
+    background-color: red;
+}
+
+#log_out:hover {
+    border-top: 0.4mm solid black;
+    border-bottom: 0.2mm solid black;
+}
+
+#log_out img {
+    width: 1cm;
+    height: 1cm;
+    border-radius: 50%;
+    position: relative;
+    top: 3mm;
+    left: 1mm;
+}
+
+#log_out p {
+    position: absolute;
+    top: 0mm;
+    left: 1.2cm;
+}
+
+#masquer {
+    position: relative;
+    left: 7.4cm;
+    background-color: white;
+    border: none;
+}
+
+#masquer:hover {
+    background-color: red;
+}
+
+#account {
+    position: absolute;
+    width: auto;
+    height: 1.3cm;
+    border: 2mm;
+    left: 33cm;
+    margin-right: 5mm;
+    top: 5mm;
+    cursor: pointer;
+}
+
+#account img {
+    position: absolute;
+    border-radius: 50%;
+    height: 1cm;
+    width: 1cm;
+    left: 50%;
+}
+
+#account p {
+    position: absolute;
+    margin-top: 1mm;
+    margin-right: 2mm;
+    right: 50%;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    position: relative;
+    height: 5cm;
+    top: 20cm;
+    /*kant 7cm*/
+}
+
+footer h3 {
+    color: white;
+}

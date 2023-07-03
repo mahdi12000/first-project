@@ -26,7 +26,8 @@ header img {
     color: red;
 }
 
-#login {        /*from here*/
+#login {
+    /*from here*/
     position: absolute;
     background-color: blue;
     right: 1cm;
@@ -440,7 +441,7 @@ header img {
     top: -4.7cm;
     left: 19cm;
     width: 398px;
-    height: 559px;
+    height: 820px;
 }
 
 #order {
@@ -473,20 +474,86 @@ header img {
     width: 6cm;
 }
 
-#Card {
+#City {
     position: absolute;
-    top: 6cm;
-    font-weight: bold;
-    left: 3.8cm;
-    font-size: 25px;
-}
-
-#card {
-    position: absolute;
-    top: 7cm;
+    top: 6.5cm;
     left: 2cm;
     height: 10mm;
     width: 6cm;
+}
+
+#city {
+    position: absolute;
+    top: 5.5cm;
+    font-weight: bold;
+    left: 2.3cm;
+    font-size: 25px;
+}
+
+#neighborhood {
+    position: absolute;
+    top: 8cm;
+    font-weight: bold;
+    left: 2.3cm;
+    font-size: 25px;
+}
+
+#Neighborhood {
+    position: absolute;
+    top: 9cm;
+    left: 2cm;
+    height: 10mm;
+    width: 6cm;
+}
+
+#building {
+    position: absolute;
+    top: 10.5cm;
+    font-weight: bold;
+    left: 2.3cm;
+    font-size: 25px;
+}
+
+#Building {
+    position: absolute;
+    top: 11.5cm;
+    left: 2cm;
+    height: 10mm;
+    width: 6cm;
+}
+
+#apartment {
+    position: absolute;
+    top: 13cm;
+    font-weight: bold;
+    left: 2.3cm;
+    font-size: 25px;
+}
+
+#Apartment {
+    position: absolute;
+    top: 14cm;
+    left: 2cm;
+    height: 10mm;
+    width: 6cm;
+}
+
+#other {
+    position: absolute;
+    top: 15.5cm;
+    font-weight: bold;
+    left: 2.3cm;
+    font-size: 25px;
+}
+
+#Other {
+    position: absolute;
+    top: 16.5cm;
+    /* padding: 0mm; */
+    left: 1.25cm;
+    /* height: 20mm; */
+    width: 8cm;
+    font-weight: bold;
 }
 
 #buttonreserve {
@@ -495,8 +562,8 @@ header img {
     position: absolute;
     width: 4cm;
     height: 1.3cm;
-    top: 13cm;
-    left: 3.5cm;
+    top: 19cm;
+    left: 0.5cm;
     font-weight: bold;
     font-size: 20px;
     cursor: pointer;
@@ -588,6 +655,8 @@ header img {
 #comment-input {
     width: 100%;
     padding: 10px;
+    background-color: white;
+    color: black;
     border: 1px solid #ccc;
     border-radius: 4px;
     resize: none;
@@ -606,7 +675,7 @@ header img {
     background-color: #0056b3;
 }
 
-.modifie{
+.modifie {
     background-color: #0005f3;
     position: relative;
     width: 2.5cm;
@@ -620,7 +689,7 @@ header img {
     resize: none;
 }
 
-.delete{
+.delete {
     background-color: red;
     position: relative;
     width: 2.5cm;
@@ -635,14 +704,25 @@ header img {
 
 }
 
-.modifieDiv{
+.modifieDiv {
     display: none;
     position: relative;
+    background-color: white;
+    z-index: 9999;
+    top: 5cm;
+    width: 26cm;
+    height: 5cm;
+    /* border: 0.5mm solid red; */
 }
 
-.save{
+.save {
     background-color: #0005f3;
     color: white;
+    cursor: pointer;
+}
+
+.cancelModifie {
+    cursor: pointer;
 }
 
 #more {
@@ -656,6 +736,37 @@ header img {
     cursor: pointer;
 }
 
+#pay-coins {
+    background-color: blue;
+    border-radius: 2mm;
+    position: absolute;
+    width: 4cm;
+    height: 1.3cm;
+    top: 19cm;
+    left: 5.5cm;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.hiddenInput {
+    display: none;
+}
+
+.points{
+    position: relative;
+    top: 9.3cm;
+    background-color: #8182c5;
+    padding-left: 0.7cm;
+    font-weight: bolder;
+    height: 12mm;
+}
+
+input{
+    background-color: white;
+    color: black;
+}
+
 footer {
     background-color: black;
     color: white;
@@ -667,4 +778,22 @@ footer {
 
 footer h3 {
     color: white;
+}
+
+.error-message {
+    color: red;
+    position: absolute;
+    z-index: 9999;
+    font-weight: bolder;
+    top: 20.5cm;
+    left: 1.7cm;
+}
+
+.success-message {
+    color: green;
+    position: absolute;
+    z-index: 9999;
+    font-weight: bolder;
+    top: 20.5cm;
+    left: 3.5cm;
 }

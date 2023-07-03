@@ -1,0 +1,461 @@
+/* header style */
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border: 0.2mm solid rgb(204, 203, 203);
+    position: fixed;
+    top: 0px;
+    z-index: 9999;
+    align-items: center;
+    padding: 20px;
+    height: 20px;
+    width: 34.8cm;
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+.site-name {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.owner-button {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 2mm;
+    border: 0.5mm solid orange;
+    width: 3.5cm;
+    cursor: pointer;
+}
+
+.owner-image {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.owner-name {
+    font-weight: bold;
+}
+
+.online-dot {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    right: 2.7cm;
+    top: 10mm;
+    background: rgb(46, 253, 46);
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+.logout {
+    position: absolute;
+    display: none;
+    width: 145px;
+    height: 40px;
+    border-radius: 2mm;
+    border: 0.5mm solid orange;
+    background-color: white;
+    left: 31.7cm;
+    top: 1.7cm;
+    cursor: pointer;
+    z-index: 99999;
+}
+
+.logout:hover {
+    background-color: orange;
+}
+
+.logout p {
+    cursor: pointer;
+    padding-left: 10mm;
+    padding-bottom: 5mm;
+    font-weight: bold;
+}
+
+.fleche {
+    transform: rotate(90deg);
+}
+
+/* style of vertical nav*/
+.sidebar {
+    width: 200px;
+    height: 14cm;
+    background: white;
+    padding: 20px;
+    margin-top: 50px;
+    float: left;
+    position: fixed;
+}
+
+.button-container {
+    /* border: 1mm solid red; */
+    height: 40px;
+}
+
+.button-container img {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    bottom: 43px;
+    left: 90%;
+}
+
+.profile-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 3px;
+    margin-left: 30px;
+}
+
+/* .profile-image form{
+    display: none;
+} */
+
+.profile-name {
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 70px;
+    /* text-align: center; */
+}
+
+.sidebar-button {
+    width: 180px;
+    height: 40px;
+    background: #fff;
+    border-radius: 2.5mm;
+    border: none;
+    margin-bottom: 10px;
+    padding-right: 100%;
+    transition: background 0.3s ease;
+}
+
+.sidebar-button:hover {
+    background-color: orange;
+    border-radius: 2.5mm;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    margin-left: 250px;
+    position: relative;
+    /* border: 0.5mm solid blue; */
+    top: 1.5cm;
+    width: 29cm;
+    height: auto;
+}
+
+/*---------------------------new code-----------------------------------*/
+
+.images-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.delete {
+    display: none;
+    z-index: 9999;
+    position: absolute;
+    left: 7cm;
+    background-color: white;
+    bottom: 5cm;
+    border: 0.5mm solid black;
+    width: 8cm;
+    height: 2cm;
+    padding: 5mm;
+}
+
+.delete form {
+    display: inline-block;
+}
+
+.delete h3 {
+    position: relative;
+    right: 3mm;
+    font-size: large;
+    font-weight: bold;
+    color: blue;
+}
+
+.deletBtn {
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+.images-container img {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    margin-left: 0px;
+    cursor: pointer;
+}
+
+.main-images {
+    margin-left: 0.5cm;
+}
+
+.main-images button {
+    background-color: #0005f3;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 0.3cm;
+}
+
+.menu-edit input[type="text"],
+.menu-edit textarea,
+.menu-edit input[type="number"] {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.menu-edit button,
+.add-images button {
+    background-color: #0005f3;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-left: 0.5cm;
+
+}
+
+.add-images input[type="file"] {
+    margin-bottom: 10px;
+    margin-left: 0.5cm;
+}
+
+.menu-images {
+    position: relative;
+    margin-bottom: 20px;
+    margin-left: 0.5cm;
+    width: 28.4cm;
+    height: auto;
+    /* border: 0.5mm solid rgb(21, 255, 32); */
+}
+
+.main {
+    height: 6cm;
+    width: 18cm;
+    /* border: 0.5mm solid red; */
+}
+
+.main img {
+    height: 6cm;
+    width: 6cm;
+    cursor: pointer;
+}
+
+.edit-main {
+    display: none;
+    position: relative;
+    background-color: rgb(219, 214, 214);
+    width: 5cm;
+    height: 100%;
+    left: 6cm;
+    bottom: 6.1cm;
+    /* border: 0.5mm solid rgb(63, 230, 29); */
+}
+
+.Modifie-main {
+    background-color: #0005f3;
+    z-index: 9999;
+    /* border: 0.5mm solid rgb(255, 3, 129); */
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 4mm;
+    margin-left: 8mm;
+    border: none;
+    width: 3cm;
+    cursor: pointer;
+}
+
+.delete-main {
+    background-color: red;
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 4mm;
+    margin-left: 8mm;
+    border: none;
+    width: 3cm;
+    cursor: pointer;
+}
+
+.cancel-main {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    margin-top: 4mm;
+    margin-left: 8mm;
+    border: none;
+    width: 3cm;
+    cursor: pointer;
+}
+
+.deleteOption {
+    display: none;
+    z-index: 9999;
+    position: relative;
+    left: 11cm;
+    bottom: 11.5cm;
+    background-color: white;
+    border: 0.5mm solid black;
+    width: 7.5cm;
+    height: 3cm;
+    /* padding: 0px; */
+}
+
+.deleteOption h3 {
+    position: relative;
+    font-size: large;
+    font-weight: bolder;
+    left: 1.5cm;
+    color: blue;
+}
+
+.deleteMainBtn {
+    position: relative;
+    left: 3mm;
+    font-size: large;
+    /* font-weight: bold; */
+    color: white;
+    background-color: red;
+    cursor: pointer;
+}
+
+.cancelMainBtn {
+    position: relative;
+    left: 2.5cm;
+    cursor: pointer;
+    font-size: large;
+    bottom: 0.7cm;
+}
+
+.modifieMain {
+    display: none;
+    position: relative;
+    border: 0.5mm solid rebeccapurple;
+    background-color: white;
+    bottom: 11.5cm;
+    left: 11cm;
+    width: 7.9cm;
+    z-index: 9999;
+}
+
+.modifie {
+    background-color: blue;
+    color: white;
+}
+
+.menu-details {
+    position: relative;
+    margin-bottom: 20px;
+    right: 6cm;
+}
+
+.menu-edit {
+    position: relative;
+    margin-bottom: 20px;
+    right: 0cm;
+}
+
+.add-images {
+    position: relative;
+    margin-bottom: 20px;
+    right: 0cm;
+}
+
+.menu-details h2,
+.menu-details p {
+    margin-top: 0;
+    margin-left: 6.2cm;
+}
+
+.menu-edit h3{
+    margin-top: 0;
+    margin-left: 0.5cm;
+}
+
+.add-images h3{
+    margin-top: 0;
+    margin-left: 0.5cm;
+}
+
+.menu-images h3 {
+    margin-left: 0.5cm;
+}
+
+.menu-details h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.menu-details p {
+    margin-bottom: 10px;
+}
+
+.menu-images h3,
+.menu-edit h3,
+.add-images h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+label {
+    margin-left: 0.5cm;
+}
+
+.description {
+    background-color: white;
+}
+
+.Description {
+    font-weight: bold;
+    font-size: large;
+}
+
+.price {
+    background-color: white;
+}
+
+.Price {
+    font-weight: bold;
+    font-size: large;
+}
+
+.payment-message {
+    position: relative;
+    font-weight: bold;
+    bottom: 0.6cm;
+    left: 3cm;
+    border-radius: 5px;
+}
+
+.error-message {
+    color: red;
+}
+
+.success-message {
+    color: green;
+}

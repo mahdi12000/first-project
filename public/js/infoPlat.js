@@ -1,4 +1,34 @@
-addEventListener('load', function () {
+window.addEventListener('DOMContentLoaded', function () {
+    // var quantityInput = document.getElementById('quantity');
+    // var cityInput = document.getElementById('City');
+    // var neighborhoodInput = document.getElementById('Neighborhood');
+    // var buildingInput = document.getElementById('Building');
+    // var apartmentInput = document.getElementById('Apartment');
+    // var otherInput = document.getElementById('Other');
+
+    // var hiddenQuantityInput = document.getElementById('hidden-quantity');
+    // var hiddenCityInput = document.getElementById('hidden-City');
+    // var hiddenNeighborhoodInput = document.getElementById('hidden-Neighborhood');
+    // var hiddenBuildingInput = document.getElementById('hidden-Building');
+    // var hiddenApartmentInput = document.getElementById('hidden-Apartment');
+    // var hiddenOtherInput = document.getElementById('hidden-Other');
+
+    var inputs = document.querySelectorAll('input');
+
+    const modifie_btn = document.querySelectorAll('.modifie');
+    const comments = document.querySelectorAll('.comments');
+    modifie_btn.forEach((button) => {
+        button.addEventListener('click', function () {
+            var review_id = this.parentNode.getAttribute('review_id');
+            var modifie_id = document.querySelector(`div[modifie_id="${review_id}"]`);
+            modifie_id.style.display = 'block';
+            var cancel_id = modifie_id.querySelector('button.cancelModifie');
+            cancel_id.addEventListener('click', function () {
+                modifie_id.style.display = 'none';
+            });
+        });
+    });
+
     const account = document.querySelector('#account img');
     const profil = document.querySelector('#profil');
     const masquer = document.querySelector('#masquer');
@@ -7,12 +37,6 @@ addEventListener('load', function () {
     const header = document.querySelector('header');
     account.addEventListener('click', function () {
         profil.style.display = "inline-block";
-        // alert(test);
-        //  alert(hours);
-        // profil.style="position:fixed"
-        // main.classList.add('blur');
-        // footer.classList.add('blur');
-        // header.classList.add('blur');
     });
 
     masquer.addEventListener('click', function () {
@@ -95,17 +119,57 @@ addEventListener('load', function () {
                 return;
             }
         }
-        const modifie_btn = document.querySelectorAll('.modifie');
-        const comments = document.querySelectorAll('.comments');
-        modifie_btn.forEach((button) => {
-            button.addEventListener('click', function () {
-                alert('hello mahdi');
-                var review_id = this.parentNode.getAttribute('review_id');
-                var modifie_id = document.querySelector(`div[modifie_id="${review_id}"]`);
-                // alert(review_id);
-                alert(modifie_id);
-            });
-        });
+    });
+    var button = document.querySelector('#pay-coins');
+    button.addEventListener('click', function (event) {
+        var quantityInput = document.getElementById('quantity');
+        var cityInput = document.getElementById('City');
+        var neighborhoodInput = document.getElementById('Neighborhood');
+        var buildingInput = document.getElementById('Building');
+        var apartmentInput = document.getElementById('Apartment');
+        var otherInput = document.getElementById('Other');
 
+        var hiddenQuantityInput = document.getElementById('hidden-quantity');
+        var hiddenCityInput = document.getElementById('hidden-City');
+        var hiddenNeighborhoodInput = document.getElementById('hidden-Neighborhood');
+        var hiddenBuildingInput = document.getElementById('hidden-Building');
+        var hiddenApartmentInput = document.getElementById('hidden-Apartment');
+        var hiddenOtherInput = document.getElementById('hidden-Other');
+
+        hiddenQuantityInput.value = quantityInput.value;
+        hiddenCityInput.value = cityInput.value;
+        hiddenNeighborhoodInput.value = neighborhoodInput.value;
+        hiddenBuildingInput.value = buildingInput.value;
+        hiddenApartmentInput.value = apartmentInput.value;
+        hiddenOtherInput.value = otherInput.value;
+
+        //-----------------------------------------------------------
+        var quantityInput = document.getElementById('quantity');
+        var quantity = quantityInput.value;
+
+        if (quantity <= 0) {
+            alert('invalid quantity');
+            event.preventDefault();
+            return;
+        } else {
+            var formulaire = document.querySelector('#hiddenForm');
+            formulaire.submit();
+        }
+    });
+
+    var buttonreserve = document.querySelector('#buttonreserve');
+    var form1=document.querySelector('#formulaire');
+    buttonreserve.addEventListener('click', function (event) {
+        var quantityInput = document.getElementById('quantity');
+        var quantity = quantityInput.value;
+
+        if (quantity <= 0) {
+            alert('invalid quantity');
+            event.preventDefault();
+            return;
+        }
+        else{
+            form1.submit();
+        }
     });
 });

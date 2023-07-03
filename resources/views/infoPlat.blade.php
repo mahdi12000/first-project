@@ -26,9 +26,12 @@
             @endif
             @endauth
             @endif
-
             <a href="https://www.google.com/" id="register">Register My Restaurant</a>
-            <a href="http://127.0.0.1:8000/welcome"><img src="images/restaurantlogo2.jpeg" alt="logo" /></a>
+            @if(auth()->check())
+            <a href="http://127.0.0.1:8000/dashboard"><img src="images/restaurantlogo2.jpeg" alt="logo" /></a>
+            @else
+            <a href="http://127.0.0.1:8000"><img src="images/restaurantlogo2.jpeg" alt="logo" /></a>
+            @endif
         </div>
     </header>
     <!-- start here -->
@@ -40,28 +43,28 @@
         </div>
         <h3 id="username">{{$userinfo->name}}</h3>
 
-        <a href="{{ route('profile.show') }}">
+        <a href="{{ route('profile') }}">
             <div id="infodiv">
                 <img src="images/account.jpeg" alt="image">
                 <p>My personnal informations</p>
             </div>
         </a>
 
-        <a href="#">
+        <a href="{{ route('profile') }}">
             <div id="bookings">
                 <img src="images/book.jpeg" alt="image">
                 <p>My bookings</p>
             </div>
         </a>
 
-        <a href="#">
+        <a href="{{route('my reviews')}}">
             <div id="reviews">
                 <img src="images/message.jpeg" alt="image">
                 <p>My reviews</p>
             </div>
         </a>
 
-        <a href="#">
+        <a href="{{route('myOrders')}}">
             <div id="orders">
                 <img src="images/orders2.jpeg" alt="image">
                 <p>My orders</p>
@@ -100,6 +103,11 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis unde fugiat neque commodi, repellendus harum necessitatibus eveniet, assumenda molestiae nemo, rem ullam quasi sapiente iste placeat
             </p>
         </div>
+        @if($menu->coins==1)
+        <div class="points">
+            <p>if you order this dish you’ll win {{$menu->pointsEarned}} coins</p>
+        </div>
+        @endif
         <div id="table">
             <div id="reservation">
                 <h2 id="h2">Make a reservation</h2>
@@ -116,17 +124,43 @@
             </form>
         </div>
         <div id="Order">
-            <form action="" method="post">
+            <form action="{{route('stripe')}}" method="get" id="formulaire">
                 @csrf
                 <div id="order">
                     <h2 id="makeorder">Make an Order</h2>
                 </div>
+                <input type="hidden" name="menu_id" value="{{$main_menu->id}}">
                 <label for="quantity" id="Quantity">Quantity</label><br>
                 <input type="number" id="quantity" name="quantity">
-                <label for="card" id="Card">card number</label>
-                <input type="text" name="card" id="card">
-                <button type="submit" id="buttonreserve">Pay</button>
+                <label for="city" id="city">city</label>
+                <input type="text" id="City" name="city" value="{{ auth()->check() ? $userinfo->city : '' }}">
+                <label for="neighborhood" id="neighborhood">neighborhood</label>
+                <input type="text" id="Neighborhood" name="neighborhood" value="{{ auth()->check() ? $userinfo->neighborhood : '' }}">
+                <label for="building" id="building">building</label>
+                <input type="text" name="Building" id="Building" value="{{ auth()->check() ? $userinfo->building : '' }}">
+                <label for="apartment" id="apartment">apartment</label>
+                <input type="text" id="Apartment" name="Apartment" value="{{ auth()->check() ? $userinfo->apartment : '' }}">
+                <label for="other" id="other">other specifications</label>
+                <textarea name="other" id="Other" cols="30" rows="5" placeholder="other specifications here (not obligatory)"></textarea>
+                <button type="button" id="buttonreserve" class="hadi">Pay</button>
             </form>
+            <form action="{{route('stripe')}}" method="get" id="hiddenForm">
+                @csrf
+                <input class="hiddenInput" type="hidden" name="menu_id" value="{{$main_menu->id}}">
+                <input class="hiddenInput" type="hidden" name="pay_with" value="coins">
+                <input class="hiddenInput" type="hidden" id="hidden-quantity" name="hidden_quantity" value="">
+                <input class="hiddenInput" type="hidden" id="hidden-City" name="hidden_city" value="">
+                <input class="hiddenInput" type="hidden" id="hidden-Neighborhood" name="hidden_neighborhood" value="">
+                <input class="hiddenInput" type="hidden" name="hidden_Building" id="hidden-Building" value="">
+                <input class="hiddenInput" type="hidden" id="hidden-Apartment" name="hidden_Apartment" value="">
+                <input class="hiddenInput" type="hidden" name="hidden_other" id="hidden-Other" value=""></input>
+                <button type="button" id="pay-coins" class="hadi">pay width coins</button>
+            </form>
+            @if (session('message'))
+            <div class="payment-message {{ session('message') === 'ordered successfully' ? 'success-message' : 'error-message' }}">
+                {{ session('message') }}
+            </div>
+            @endif
         </div>
         @auth
         <form action="{{route('comment')}}" method="post">
@@ -147,9 +181,10 @@
         <div class="modifieDiv" modifie_id="{{$review->review_id}}">
             <form action="{{route('modifie')}}" method="post">
                 @csrf
-                <textarea name="newComment" id="newComment">{{$review->review}}</textarea>
+                <textarea name="newComment" id="newComment" cols="130" rows="10">{{$review->review}}</textarea><br>
                 <input type="hidden" name="comment_id" value="{{$review->review_id}}">
                 <button class="save" type="submit">save</button>
+                <button type="button" class="cancelModifie" cancel_id="{{$review->review_id}}">cancel</button>
             </form>
         </div>
 
@@ -163,8 +198,8 @@
             <p class="avis"> {{$review->review}}</p>
             @auth
             @if($userinfo->id==$review->user_id)
-            <button type="button" class="modifie">modifie</button>
-            <form action="{{route('delete')}}" method="post">
+            <button type="button" class="modifie" btn_id="{{$review->review_id}}">modifie</button>
+            <form action="" method="post">
                 @csrf
                 <input type="hidden" name="comment_id" value="{{$review->review_id}}">
                 <button type="submit" class="delete">delete</button>

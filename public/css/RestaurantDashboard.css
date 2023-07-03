@@ -1,0 +1,335 @@
+/* style of vertical nav*/
+.sidebar {
+    width: 200px;
+    height: 14cm;
+    background: white;
+    padding: 20px;
+    margin-top: 0px;
+    float: left;
+}
+
+.button-container {
+    /* border: 1mm solid red; */
+    height: 40px;
+}
+
+.button-container img {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    bottom: 43px;
+    left: 90%;
+}
+
+.profile-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+
+.profile-name {
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 45px;
+}
+
+.sidebar-button {
+    width: 180px;
+    height: 40px;
+    background: #fff;
+    border-radius: 2.5mm;
+    border: none;
+    margin-bottom: 10px;
+    padding-right: 100%;
+    transition: background 0.3s ease;
+}
+
+.sidebar-button:hover {
+    background-color: orange;
+    border-radius: 2.5mm;
+}
+
+/* Styles pour l'en-tête */
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    position: relative;
+    bottom: 2mm;
+    align-items: center;
+    padding: 20px;
+    height: 20px;
+    width: 34.8cm;
+}
+
+.site-name {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.owner-button {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 2mm;
+    border: 0.5mm solid orange;
+    cursor: pointer;
+}
+
+.owner-image {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.owner-name {
+    font-weight: bold;
+}
+
+.online-dot {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    right: 2.7cm;
+    top: 3mm;
+    background: rgb(44, 224, 44);
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+.logout {
+    position: relative;
+    display: none;
+    width: 145px;
+    height: 40px;
+    border-radius: 2mm;
+    border: 0.5mm solid orange;
+    background-color: white;
+    left: 25.3cm;
+    bottom: 4mm;
+    cursor: pointer;
+}
+
+.logout:hover {
+    background-color: orange;
+}
+
+.logout p {
+    cursor: pointer;
+    padding-left: 10mm;
+    padding-bottom: 5mm;
+    font-weight: bold;
+}
+
+.fleche {
+    transform: rotate(90deg);
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+.dashboard {
+    position: relative;
+    left: 5mm;
+    bottom: 2mm;
+}
+
+.total_earnings {
+    display: inline-block;
+    /* border: 0.5mm solid red; */
+    background-color: white;
+    margin-left: 6mm;
+    border-radius: 2mm;
+    width: 3cm;
+    padding: 20px;
+}
+
+.total_orders {
+    display: inline-block;
+    /* border: 0.5mm solid red; */
+    background-color: white;
+    margin-left: 8mm;
+    border-radius: 2mm;
+    width: 3cm;
+    padding: 22px;
+    text-align: center;
+}
+
+.total_reservations {
+    display: inline-block;
+    /* border: 0.5mm solid red; */
+    background-color: white;
+    margin-left: 8mm;
+    border-radius: 2mm;
+    width: 3.4cm;
+    padding: 22px;
+    text-align: center;
+}
+
+.total_menus {
+    display: inline-block;
+    /* border: 0.5mm solid red; */
+    background-color: white;
+    margin-left: 8mm;
+    border-radius: 2mm;
+    width: 3cm;
+    padding: 22px;
+    text-align: center;
+}
+
+.total_comments {
+    display: inline-block;
+    /* border: 0.5mm solid red; */
+    background-color: white;
+    margin-left: 8mm;
+    border-radius: 2mm;
+    width: 3cm;
+    padding: 22px;
+    text-align: center;
+}
+
+.histogramme {
+    position: relative;
+    background-color: white;
+    display: inline-block;
+    /* border: 0.5mm solid red; */
+    height: 6cm;
+    width: 10cm;
+    left: 0.5cm;
+    top: 7mm;
+    border-radius: 2mm;
+}
+
+.histogramme h3 {
+    /* margin-left: 0mm; */
+    color: blue;
+    position: relative;
+    right: 6cm;
+}
+
+#myChart {
+    width: 10cm;
+    height: 7cm;
+    margin: 0 auto;
+    display: inline-block;
+    position: absolute;
+    bottom: 0mm;
+}
+
+.courbe {
+    position: relative;
+    background-color: white;
+    display: inline-block;
+    /* border: 0.5mm solid red; */
+    height: 6cm;
+    width: 10cm;
+    left: 1cm;
+    top: 7mm;
+    border-radius: 2mm;
+}
+
+#orders {
+    width: 10cm;
+    height: 6cm;
+    margin: 0 auto;
+    display: inline-block;
+    position: absolute;
+    bottom: 0mm;
+}
+
+.div_camembert {
+    position: relative;
+    background-color: white;
+    display: inline-block;
+    /* border: 0.5mm solid red; */
+    height: 6cm;
+    width: 7cm;
+    left: 1.4cm;
+    top: 7mm;
+    border-radius: 2mm;
+    /* color: rgb(164, 10, 224); */
+}
+
+.diagramme_camembert {
+    width: 7cm;
+    height: 6cm;
+    margin: 0 auto;
+    display: inline-block;
+    position: absolute;
+    bottom: 0mm;
+}
+
+.div_reservations {
+    position: relative;
+    background-color: white;
+    display: inline-block;
+    /* border: 0.5mm solid red; */
+    height: 6cm;
+    width: 10cm;
+    left: 0.5cm;
+    /* top: -5mm; */
+    margin-top: 1cm;
+    border-radius: 2mm;
+}
+
+#reservations {
+    width: 10cm;
+    height: 6cm;
+    margin: 0 auto;
+    display: inline-block;
+    position: absolute;
+    bottom: 0mm;
+}
+
+.comments{
+    position: relative;
+    background-color: white;
+    display: inline-block;
+    border: 0.5mm solid red;
+    height: auto;
+    width: 17cm;
+    left: 1.5cm;
+    top: 2cm;
+    border-radius: 2mm;
+    padding-left: 4mm;
+}
+
+.custommer_comment{
+    position: relative;
+    width: 17.3cm;
+    height: auto;
+    /* border: 0.5mm solid green; */
+    right: 4mm;
+}
+
+.img{
+    border-radius: 50%;
+    width: 8mm;
+    height: 8mm;
+    margin-top: 4mm;
+    margin-left: 3mm;
+    display: block;
+}
+
+.name{
+    position: relative;
+    left: 1cm;
+    bottom: 1cm;
+}
+
+.comments p{
+    margin-left: 5mm;
+    display:inline-block;
+}
+
+.SeeAll{
+    position: relative;
+    color: blue;
+    cursor: pointer;
+    left: 14cm;
+}

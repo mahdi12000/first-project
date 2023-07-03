@@ -28,7 +28,11 @@
             @endif
 
             <a href="https://www.google.com/" id="register">Register My Restaurant</a>
-            <a href="http://127.0.0.1:8000/welcome"><img src="images/restaurantlogo2.jpeg" alt="logo" /></a>
+            @if(auth()->check())
+            <a href="http://127.0.0.1:8000/dashboard"><img src="images/restaurantlogo2.jpeg" alt="logo" /></a>
+            @else
+            <a href="http://127.0.0.1:8000"><img src="images/restaurantlogo2.jpeg" alt="logo" /></a>
+            @endif
         </div>
     </header>
 
@@ -42,28 +46,28 @@
         <div id="Username">
             <h3 id="username">{{$userinfo->name}}</h3>
         </div>
-        <a href="{{ route('profile.show') }}">
+        <a href="{{ route('profile') }}">
             <div id="infodiv">
                 <img src="images/account.jpeg" alt="image">
                 <p>My personnal informations</p>
             </div>
         </a>
 
-        <a href="#">
+        <a href="{{route('myBookings')}}">
             <div id="bookings">
                 <img src="images/book.jpeg" alt="image">
                 <p>My bookings</p>
             </div>
         </a>
 
-        <a href="#">
+        <a href="{{route('my reviews')}}">
             <div id="reviews">
                 <img src="images/message.jpeg" alt="image">
                 <p>My reviews</p>
             </div>
         </a>
 
-        <a href="#">
+        <a href="{{route('myOrders')}}">
             <div id="orders">
                 <img src="images/orders2.jpeg" alt="image">
                 <p>My orders</p>
@@ -98,9 +102,9 @@
                         <img class="imageR" src="{{$platter->main_image}}" alt="platter">
                     </div>
                     <h2 class="Restaurant">{{$platter->name}}</h2>
-                    <p class="adress">{{$platter->city}}</p>
-                    <p class="price">price:{{$platter->price}}</p>
-                    <p class="coins">coins: {{$answer}}</p>
+                    <p class="adress">{{$platter->city}} {{$platter->neighborhood}} {{$platter->other}}</p>
+                    <p class="price">price:{{$platter->price *((100-$platter->discount)/100)}} {{$platter->currency}}</p>
+                    <p class="coins">coins: {{$answer}}  @if($platter->coins==true) ({{$platter->priceCoins}} coin)@endif</p>
                     <p class="open">opening time: {{$platter->timeOpen}}</p>
                     <p class="close">closing time: {{$platter->timeClose}}</p>
                 </div>

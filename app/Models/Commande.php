@@ -10,7 +10,7 @@ class Commande extends Model
     use HasFactory;
     protected $table='commandes';
     protected $fillable=[
-
+        
     ];
 
     public function User(){

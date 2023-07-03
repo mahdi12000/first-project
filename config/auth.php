@@ -14,8 +14,8 @@ return [
     */
 
     'defaults' => [
-        'guard' => 'web',
-        'passwords' => 'users',
+        'guard' => 'web',  //web
+        'passwords' => 'restaurants',
     ],
 
     /*
@@ -36,15 +36,18 @@ return [
     */
 
     'guards' => [
-        'web' => [
+        'web' => [    
             'driver' => 'session',
             'provider' => 'users',
+            'verification' => true,
         ],
 
         'Restaurant' => [
             'driver' => 'session',
             'provider' => 'restaurants',
+            'verification' => true,
         ],
+
     ],
 
     /*
@@ -69,11 +72,6 @@ return [
             'driver' => 'eloquent',
             'model' => App\Models\User::class,
         ],
-
-        // 'users' => [
-        //     'driver' => 'database',
-        //     'table' => 'users',
-        // ],
 
         'restaurants' => [
             'driver' => 'eloquent',

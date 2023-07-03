@@ -273,6 +273,10 @@ header img {
     font-weight: bold;
 }
 
+#grand_image{
+    display: inline;
+}
+
 #grand_image img {
     width: 100%;
     height: 14cm;
@@ -382,15 +386,36 @@ header img {
     font-weight: bold;
 }
 
+/*---------------------------this is the new style--------------------------------*/
+.img {
+    width: 260px;
+    height: 300px;
+    margin-top: 0cm;
+    /* border: 0.5mm solid rgb(29, 4, 255); */
+}
+
+td {
+    /* border: 0.5mm solid red; */
+    height: 10cm;
+    width: 5cm;
+}
+
+table {
+    width: 1055px;
+    /* border: 1mm solid green; */
+    margin-left: 90px;
+    margin-top: 19cm;
+    position: relative;
+    /* bottom: 14cm; */
+}
+/*---------------------------------end here----------------------------------------*/
+
 footer {
     position: relative;
     background-color: black;
     color: white;
-    position: relative;
     height: 5cm;
-    /* margin-top: 3cm; */
-    top:40cm;
-    /*kant 7cm*/
+    margin-top: 30cm;
 }
 
 footer h3 {

@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../css/login_form.css">
+    <script src="../js/login_form.js"></script>
+    <title>login</title>
 </head>
 
 <body>
@@ -15,19 +17,20 @@
     </div>
     @endif
 
-    @if(session('bool'))
-    <h1>La variable bool est vraie.</h1><br>
-    @else
-    <h1>La variable bool est fausse.</h1><br>
-    @endif
-
-    <form action="{{route('Restaurant.login')}}" method="get">
+    <form action="{{route('loginAccount')}}" method="post">
+        @csrf
         <label for="email">email</label><br>
         <input type="email" name="email"><br>
         <label for="password">password</label><br>
-        <input type="text" name="password"><br>
+        <input type="password" name="password"><br>
         <button type="submit">login</button>
     </form>
+    <a href="{{route('registration')}}">register now</a>
+    @if(session('bool') === false)
+    <div class="error-message">
+        invalid username or password.
+    </div>
+    @endif
 </body>
 
 </html>

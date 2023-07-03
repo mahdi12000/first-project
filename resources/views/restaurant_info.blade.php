@@ -27,7 +27,7 @@
             @endauth
             @endif
 
-            <a href="https://www.google.com/" id="register">Register My Restaurant</a>
+            <a href="{{route('registration')}}" id="register">Register My Restaurant</a>
             @if(auth()->check())
             <a href="http://127.0.0.1:8000/dashboard"><img src="images/restaurantlogo2.jpeg" alt="logo" /></a>
             @else
@@ -44,28 +44,28 @@
         </div>
         <h3 id="username">{{$userinfo->name}}</h3>
 
-        <a href="{{ route('profile.show') }}">
+        <a href="{{ route('profile') }}">
             <div id="infodiv">
                 <img src="images/account.jpeg" alt="image">
                 <p>My personnal informations</p>
             </div>
         </a>
 
-        <a href="#">
+        <a href="{{route('myBookings')}}">
             <div id="bookings">
                 <img src="images/book.jpeg" alt="image">
                 <p>My bookings</p>
             </div>
         </a>
 
-        <a href="#">
+        <a href="{{route('my reviews')}}">
             <div id="reviews">
                 <img src="images/message.jpeg" alt="image">
                 <p>My reviews</p>
             </div>
         </a>
 
-        <a href="#">
+        <a href="{{route('myOrders')}}">
             <div id="orders">
                 <img src="images/orders2.jpeg" alt="image">
                 <p>My orders</p>
@@ -88,33 +88,25 @@
     <!-- end here -->
     <main>
         <div id="grand_image">
-            <img src="images/R4.jpg" alt="main Restaurant image">
+            <img src="{{asset($restaurant->main_image)}}" alt="main Restaurant image">
         </div>
         <h1 id="ourMenu">our Menu</h1>
-        <!-- <div id="background">
-            <img src="images/back8.jpeg" alt="back8">
-        </div> -->
-        <div id="grand_div">
-            <div id="image_part">
-                <img src="images/back5.jpg" alt="image">
-                <img src="images/jus2.jpg" alt="jus" id="jus">
-            </div>
-            @foreach($menus as $menu)
-            <?php $br++; ?>
-            <a href="{{route('infoplat')}}?menu_id={{$menu->id}}">
-                <div class="menu">
-                    <div class="div_img">
-                        <img src="{{$menu->main_image}}" alt="image">
-                    </div>
-                    <div class="description">
-                        <p class="platter">platter: {{$menu->plat}}</p>
-                        <p class="price">price: {{$menu->price}} DH</p>
-                        <p class="Description">description: {{$menu->description}}</p>
-                    </div>
-                </div>
-            </a>
+
+        <table>
+            @foreach($menus->chunk(3) as $chunk)
+            <tr>
+                @foreach($chunk as $menu)
+                <td menu="{{$menu->id}}">
+                    <a href="{{route('infoplat', ['menu_id' => $menu->id])}}">
+                        <img src="{{asset($menu->main_image)}}" alt="img" class="img">
+                        <p>{{$menu->plat}}</p>
+                    </a>
+                </td>
+                @endforeach
+            </tr>
             @endforeach
-        </div>
+        </table>
+
     </main>
     <footer>
         <a href="#">

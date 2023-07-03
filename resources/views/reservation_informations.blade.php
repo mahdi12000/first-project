@@ -40,28 +40,28 @@
         </div>
         <h3 id="username">{{$userinfo->name}}</h3>
 
-        <a href="{{ route('profile.show') }}">
+        <a href="{{ route('profile') }}">
             <div id="infodiv">
                 <img src="images/account.jpeg" alt="image">
                 <p>My personnal informations</p>
             </div>
         </a>
 
-        <a href="#">
+        <a href="{{route('myBookings')}}">
             <div id="bookings">
                 <img src="images/book.jpeg" alt="image">
                 <p>My bookings</p>
             </div>
         </a>
 
-        <a href="#">
+        <a href="{{route('my reviews')}}">
             <div id="reviews">
                 <img src="images/message.jpeg" alt="image">
                 <p>My reviews</p>
             </div>
         </a>
 
-        <a href="#">
+        <a href="{{route('myOrders')}}">
             <div id="orders">
                 <img src="images/orders2.jpeg" alt="image">
                 <p>My orders</p>
@@ -93,7 +93,7 @@
             <p id="label3">time: {{$time}}</p><br>
             <p id="label4">date: {{$date}}</p><br>
             <p id="label5">guests: {{$nbrPlace}}</p>
-            <p id="label6">price: {{$menu_info->price}}</p>
+            <p id="label6">price: {{$menu_info->price}} DH</p>
             <!-- <button type="button" id="home"> back to home</button> -->
         </div>
         @else

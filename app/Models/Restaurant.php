@@ -2,8 +2,9 @@
 
 namespace App\Models;
 
-//use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
@@ -20,6 +21,7 @@ class Restaurant extends Authenticatable
      */
     protected $table = 'restaurants';
     protected $guard='Restaurant';
+    protected $provider = 'restaurants';
     protected $email = 'email'; 
     protected $password = 'password';
     
@@ -35,6 +37,8 @@ class Restaurant extends Authenticatable
         'coins',
         'country',
         'city',
+        'neighborhood',
+        'other'
     ];
 
     /**
